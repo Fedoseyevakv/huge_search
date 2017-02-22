@@ -1,0 +1,91 @@
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    color: #c2c2c2;
+}
+
+main {
+    width: 800px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+/*---------- Search ----------*/
+.search {
+    border: none;
+    background: none;
+    width: 85%;
+    margin-top: 50px;
+    height: 100px;
+    color: #ec5a62;
+    font-weight: bold;
+    font-size: 80px;
+    outline:none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #c2c2c2;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #c2c2c2;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #c2c2c2;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #c2c2c2;
+}
+
+.button {
+    outline:none;
+}
+
+.button img {
+    width: 60px;
+}
+
+/*---------- Containers ----------*/
+.container {
+    width: 30%;
+    display: inline-block;
+    margin-right: 5%;
+}
+
+.container:last-child {
+    margin-right: 0;
+}
+
+h2 {
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.container a {
+    display: block;
+    line-height: 60px;
+    background-color: rgba(118,117,128,0.05);
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 0.6rem;
+    color: #c2c2c2;
+    font-weight: bold;
+}
+
+.container a:hover {
+    background-color: rgba(118,117,128,0.1);
+    color: #ec5a62;
+}
+.container img {
+    vertical-align: middle;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.people a img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
