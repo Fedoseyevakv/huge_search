@@ -5,16 +5,22 @@ body {
 }
 
 main {
-    width: 800px;
+    width: 850px;
     margin: 0 auto;
     font-size: 0;
+    padding: 0 1%;
+    box-sizing: border-box;
 }
 
 /*---------- Search ----------*/
+.form {
+    margin: 0 auto;
+}
+
 .search {
     border: none;
     background: none;
-    width: 85%;
+    width: 90%;
     margin-top: 50px;
     height: 100px;
     color: #ec5a62;
@@ -46,14 +52,17 @@ main {
 
 /*---------- Containers ----------*/
 .container {
-    width: 30%;
+    width: 33%;
     display: inline-block;
-    margin-right: 5%;
+    padding: 0 1%;
+    box-sizing: border-box;
 }
 
+/*
 .container:last-child {
     margin-right: 0;
 }
+*/
 
 h2 {
     padding: 10px 0;
@@ -72,6 +81,11 @@ h2 {
     font-size: 0.6rem;
     color: #c2c2c2;
     font-weight: bold;
+}
+
+a h3 {
+    display: inline-block;
+    margin: 0;
 }
 
 .container a:hover {
