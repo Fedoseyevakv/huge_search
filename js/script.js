@@ -36,7 +36,7 @@ $(document).ready(function () {
         $('ul').each(function () {
             $(this).find('li').sort(function () {
                 return Math.random() - 0.5;
-            }).appendTo('ul');
+            }).appendTo(this);
 
         });
 
