@@ -4,15 +4,15 @@ $(document).ready(function () {
             event.preventDefault();
         }
     });
-    
-    $('#button-search').click(function (event) {
-        event.preventDefault();
+
+    $('#button-search').click(function () {
         $('a').removeClass('found');
         var NotFound = $('main p').removeClass('not-found'),
             needle = $('input.search').val().toUpperCase(),
-            result = 0,
-            counter = $('a').attr('counter') !== undefined ? $('a').attr('counter') : 0;
+            result = 0;
+            
         $('a').each(function () {
+            var counter = $(this).attr('counter') !== undefined ? $(this).attr('counter') : 0;
             if (($(this).text().toUpperCase().indexOf(needle) !== -1) && needle !== '') {
                 $(this).addClass('found');
                 $(this).attr('counter', ++counter);
@@ -22,7 +22,7 @@ $(document).ready(function () {
                 result += 1;
             }
         });
-        
+
         if ((result === 0) && (needle !== '')) {
             NotFound.addClass('not-found').text('Ничего не найдено!');
         } else {
@@ -31,17 +31,15 @@ $(document).ready(function () {
             }
         }
     });
-    
+
     $('#button-shuffle').click(function () {
         $('ul').each(function () {
             $(this).find('li').sort(function () {
-                return (Math.random - 0.5);
-                
-            });
-            $(this).appendTo('ul');
-            
+                return Math.random() - 0.5;
+            }).appendTo('ul');
+
         });
-        
+
     });
 });
 
@@ -72,4 +70,4 @@ $(document).ready(function () {
 
 
 //для каждого ул взять ли > sort(func return math.random - 0.5) >appendTo ul
-//3. 
+//3.
