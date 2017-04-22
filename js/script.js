@@ -10,10 +10,15 @@ $(document).ready(function () {
         $('a').removeClass('found');
         var NotFound = $('main p').removeClass('not-found'),
             needle = $('input.search').val().toUpperCase(),
-            result = 0;
+            result = 0,
+            counter = $('a').attr('counter') !== undefined ? $('a').attr('counter') : 0;
         $('a').each(function () {
             if (($(this).text().toUpperCase().indexOf(needle) !== -1) && needle !== '') {
                 $(this).addClass('found');
+                $(this).attr('counter', ++counter);
+                if (counter >= 3) {
+                    $(this).addClass('gold');
+                }
                 result += 1;
             }
         });

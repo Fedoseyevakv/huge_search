@@ -130,3 +130,7 @@ footer {
 .not-found {
     opacity: 1;
 }
+
+.gold {
+    background: url(../img/star.png) repeat;
+}
