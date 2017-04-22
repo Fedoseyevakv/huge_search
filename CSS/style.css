@@ -7,7 +7,14 @@ body {
 main {
     width: 800px;
     margin: 0 auto;
-    font-size: 0;
+/*    font-size: 0;*/
+}
+
+main p {
+    opacity: 0;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
 }
 
 /*---------- Search ----------*/
@@ -40,11 +47,19 @@ main {
     outline:none;
 }
 
+.button:hover {
+    cursor: pointer;
+}
+
 .button img {
     width: 60px;
 }
 
 /*---------- Containers ----------*/
+.lists {
+    font-size: 0;
+}
+
 .container {
     width: 30%;
     display: inline-block;
@@ -67,11 +82,13 @@ h2 {
     line-height: 60px;
     background-color: rgba(118,117,128,0.05);
     margin-bottom: 5px;
+    border: rgba(118,117,128,0) 2px solid;
     border-radius: 5px;
     padding: 0 10px;
     font-size: 0.6rem;
     color: #c2c2c2;
     font-weight: bold;
+    box-sizing: border-box;
 }
 
 .container a:hover {
@@ -88,4 +105,28 @@ h2 {
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
+}
+
+/*---------- Footer ----------*/
+footer {
+    font-size: 40px;
+    text-align: center;
+}
+
+#button-random {
+    margin: 20px;
+}
+
+#button-shuffle:hover {
+    color: #ec5a62;
+}
+
+/*---------- JS ----------*/
+.container .found {
+    border: #c2c2c2 2px solid;
+/*    background: orange;*/
+}
+
+.not-found {
+    opacity: 1;
 }
